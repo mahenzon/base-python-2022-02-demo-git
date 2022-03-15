@@ -34,7 +34,7 @@ def demo_walrus():
 
 def main():
     # demo_zip()
-    demo_map()
+    # demo_map()
     demo_walrus()
 
 
