@@ -9,9 +9,23 @@ def demo_map():
         print("i =", i)
 
 
+def demo_walrus():
+    a = ["spam", "eggs"]
+    # if len(a) > 0:
+    #     print("a > 0, =", len(a))
+    # a_len = len(a)
+    # if a_len > 0:
+    #     print("a > 0, =", a_len)
+    if a_len := len(a):
+        print("a > 0, =", a_len)
+    else:
+        print("no items in a")
+
+
 def main():
     # demo_zip()
     demo_map()
+    demo_walrus()
 
 
 if __name__ == "__main__":
