@@ -6,7 +6,7 @@ def demo_zip():
 def demo_map():
     print(pow(2, 3))
     for i in map(pow, [2, 3, 4], [7, 5, 3]):
-        print(i)
+        print("i =", i)
 
 
 def main():
