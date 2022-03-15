@@ -3,8 +3,15 @@ def demo_zip():
         print(a, b)
 
 
+def demo_map():
+    print(pow(2, 3))
+    for i in map(pow, [2, 3, 4], [7, 5, 3]):
+        print("i =", i)
+
+
 def main():
-    demo_zip()
+    # demo_zip()
+    demo_map()
 
 
 if __name__ == "__main__":
