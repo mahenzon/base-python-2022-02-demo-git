@@ -10,16 +10,26 @@ def demo_map():
 
 
 def demo_walrus():
-    a = ["spam", "eggs"]
+    a = ["spam", "eggs", "foobar"]
+    # a = []
     # if len(a) > 0:
     #     print("a > 0, =", len(a))
     # a_len = len(a)
-    # if a_len > 0:
+    # if a_len:
     #     print("a > 0, =", a_len)
     if a_len := len(a):
         print("a > 0, =", a_len)
+    # if (a_len := len(a)) > 0:
+    #     print("a > 0, =", a_len)
     else:
         print("no items in a")
+
+    a = b = c = 42
+    assert a == 42
+    assert b == 42
+    assert c == 42
+    assert a == b == c == 42
+    assert 40 < a < 50
 
 
 def main():
